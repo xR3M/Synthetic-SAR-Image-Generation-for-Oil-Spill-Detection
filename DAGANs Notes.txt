@@ -1,0 +1,29 @@
+
+Dense: Fully connected layer
+
+7*7*128: 128 values to help to determine what to generate from input_dim
+
+that 128 values is an array and will convert into it to have spatial qualities to create it into an image
+7*7*128 will do this
+
+Activation: will allow to caters for non-linearities in our model
+NOTE: linear what activation functions do!!
+
+Reshape:will convert 6272(7*7*128) into a format of (7,7,128)
+
+
+Upsampling:
+
+128 channels
+Kernel size of 5x5
+padding of the same so that it would not crop
+
+
+
+Dropout layer sets some input units to zero in order to prevent overfitting, this is done so that the model 
+doesnt start becoming overrelient on specific features
+
+Must be careful when handling the dropout layer, a bad dropout layer may result in massive information loss and underfitting
+
+
+
